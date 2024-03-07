@@ -1,1 +1,1 @@
-Sovelluskehitys kurssille tehty pieni laskin.
+Sovelluskehitys kurssille tehty pieni laskin. 
