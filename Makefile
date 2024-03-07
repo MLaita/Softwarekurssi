@@ -1,6 +1,8 @@
 CC=gcc
 CFLAGS=-I.
 
+all: program
+
 program: First.o math_functions.o other_functions.o
     $(CC) -o program First.o math_functions.o other_functions.o
 

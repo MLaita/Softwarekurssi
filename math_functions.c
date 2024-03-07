@@ -1,9 +1,9 @@
 #include "functions.h"
 
-int add(int a, int b) {
-    return a + b;
+float add(float num1, float num2) {
+    return num1 + num2;
 }
 
-int subtract(int a, int b) {
-    return a - b;
+float subtract(float num1, float num2) {
+    return num1 - num2;
 }

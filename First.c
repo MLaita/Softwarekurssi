@@ -59,10 +59,42 @@
 *    MAIN PROGRAM                                                      *
 **********************************************************************/
 
-int main(void)
-{
-    int result = add(1, 2);
-    printf("Math result is: %d\n", result);
+
+int main() {
+    char choice;
+    float num1, num2, result;
+
+    printf("Enter choice (+, -, *, /): ");
+    scanf("%c", &choice);
+
+    printf("Enter two numbers: ");
+    scanf("%f %f", &num1, &num2);
+
+    switch(choice) {
+        case '+':
+            result = add(num1, num2);
+            printf("Result is: %d\n", result);
+            break;
+        case '-':
+            result = subtract(num1, num2);
+            printf("Result is: %d\n", result);
+            break;
+        case '*':
+            result = multiply(num1, num2);
+            printf("Result is: %d\n", result);
+            break;
+        case '/':
+            if(num2 != 0) {
+                result = divide(num1, num2);
+                printf("Result is: %d\n", result);
+            } else {
+                printf("Error! Division by zero.");
+            }
+            break;
+        default:
+            printf("Error! Choice is not correct.");
+            break;
+    }
 
     return 0;
 } /* end of main */
