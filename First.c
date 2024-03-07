@@ -75,22 +75,28 @@ int main() {
             result = add(num1, num2);
             printf("Result is: %d\n", result);
             break;
+
         case '-':
             result = subtract(num1, num2);
             printf("Result is: %d\n", result);
             break;
+
         case '*':
             result = multiply(num1, num2);
             printf("Result is: %d\n", result);
             break;
+
         case '/':
-            if(num2 != 0) {
+            if(num2 != 0) 
+            {
                 result = divide(num1, num2);
                 printf("Result is: %d\n", result);
-            } else {
+            } else 
+            {
                 printf("Error! Division by zero.");
             }
             break;
+            
         default:
             printf("Error! Choice is not correct.");
             break;
