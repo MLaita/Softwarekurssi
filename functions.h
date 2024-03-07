@@ -1,8 +1,12 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-int add(int a, int b);
+float add(float num1, float num2);
 
-int sub(int a, int b);
+float subtract(float num1, float num2);
+
+float multiply(float num1, float num2);
+
+float divide(float num1, float num2);
 
 #endif
